@@ -1,3 +1,5 @@
+package com.kodcu;
+
 class VanKedisi {
   int i;
 }

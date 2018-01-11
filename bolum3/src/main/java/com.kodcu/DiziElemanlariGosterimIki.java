@@ -1,3 +1,5 @@
+package com.kodcu;
+
 public class DiziElemanlariGosterimIki {
 
     double[] d;

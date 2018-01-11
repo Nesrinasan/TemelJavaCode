@@ -1,3 +1,4 @@
+package com.kodcu;
 
 public class DefaultConstructor {
 

@@ -1,3 +1,4 @@
+package com.kodcu;
 
 class MuzikDosyasi {
     String m_tur = "Muzik Dosyasi" ;

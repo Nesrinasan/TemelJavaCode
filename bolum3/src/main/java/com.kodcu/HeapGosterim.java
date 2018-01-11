@@ -1,3 +1,5 @@
+package com.kodcu;
+
 public class HeapGosterim {
 
 	public static void main(String args[]) throws InterruptedException{

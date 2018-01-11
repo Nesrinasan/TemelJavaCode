@@ -1,3 +1,5 @@
+package com.kodcu;
+
 class Elma2 {
 
 	int i = 0 ;

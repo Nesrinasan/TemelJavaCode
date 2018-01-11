@@ -1,3 +1,5 @@
+package com.kodcu;
+
 class Ucak {
 	
 	String ucak_isim  ;

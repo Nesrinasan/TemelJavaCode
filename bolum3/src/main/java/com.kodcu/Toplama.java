@@ -1,3 +1,5 @@
+package com.kodcu;
+
 public class Toplama {
     
     public static double topla(double a , double b ) {

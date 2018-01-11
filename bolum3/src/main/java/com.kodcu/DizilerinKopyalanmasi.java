@@ -1,3 +1,5 @@
+package com.kodcu;
+
 public class DizilerinKopyalanmasi {
 
     public static void main(String args[]) {

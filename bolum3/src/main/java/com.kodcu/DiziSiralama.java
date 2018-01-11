@@ -1,3 +1,5 @@
+package com.kodcu;
+
 import java.util.*; // java.util kutuphanelerini kullanmak icin
 public class DiziSiralama {
 

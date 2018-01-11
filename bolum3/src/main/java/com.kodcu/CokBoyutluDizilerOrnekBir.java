@@ -1,3 +1,5 @@
+package com.kodcu;
+
 public class CokBoyutluDizilerOrnekBir {
 
     public static void main(String args[]) {

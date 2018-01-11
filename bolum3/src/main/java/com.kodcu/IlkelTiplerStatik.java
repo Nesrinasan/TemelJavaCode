@@ -1,3 +1,5 @@
+package com.kodcu;
+
 public class  IlkelTiplerStatik {
 
   static boolean mantiksal_deger;

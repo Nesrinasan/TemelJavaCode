@@ -1,3 +1,5 @@
+package com.kodcu;
+
 class Kopek {
     public Kopek() {
 	System.out.println("Hav Hav");

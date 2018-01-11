@@ -1,3 +1,5 @@
+package com.kodcu;
+
 public class TarihHesaplama2 {
 
     int gun , ay , yil ;

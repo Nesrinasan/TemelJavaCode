@@ -1,3 +1,5 @@
+package com.kodcu;
+
 class AmasyaElmasi {
 
 	int i = 0 ;

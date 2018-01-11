@@ -1,3 +1,5 @@
+package com.kodcu;
+
 public class DegiskenGosterim {
 
     private int x; //nesneye ait global alan
@@ -13,6 +15,6 @@ public class DegiskenGosterim {
 class Mouse {
     public static void main(String args[]) {
         DegiskenGosterim d = new DegiskenGosterim();
-        d.
+
     }
 }

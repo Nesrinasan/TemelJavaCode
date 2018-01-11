@@ -1,3 +1,5 @@
+package com.kodcu;
+
 public class StatikTest {
     
        public static void hesapla(int a , int b) {

@@ -1,4 +1,6 @@
-import java.io.* ; 
+package com.kodcu;
+
+import java.io.* ;
 import java.util.* ; 
 public class Stack1 
 {

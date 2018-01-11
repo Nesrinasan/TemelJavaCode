@@ -1,3 +1,5 @@
+package com.kodcu;
+
 class Dinozor {
     public Dinozor() {
 	System.out.println("Ben Denver");

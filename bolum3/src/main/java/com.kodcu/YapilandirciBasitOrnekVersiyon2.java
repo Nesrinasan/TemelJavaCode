@@ -1,3 +1,5 @@
+package com.kodcu;
+
 class YeniKahveFincani {
   public YeniKahveFincani(int adet ) { 
       System.out.println(adet + " adet YeniKahveFincani");

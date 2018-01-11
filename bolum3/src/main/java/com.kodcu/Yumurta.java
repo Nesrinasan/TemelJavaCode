@@ -1,3 +1,4 @@
+package com.kodcu;
 
 public class Yumurta {
   int toplam_yumurta_sayisi = 9;

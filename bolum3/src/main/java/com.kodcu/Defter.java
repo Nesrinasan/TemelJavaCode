@@ -1,3 +1,5 @@
+package com.kodcu;
+
 class Kagit {
 
     public Kagit(int i) {

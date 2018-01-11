@@ -1,3 +1,5 @@
+package com.kodcu;
+
 class Toyota {
 	int kapi_sayisi;
 	int vites_sayisi ;
