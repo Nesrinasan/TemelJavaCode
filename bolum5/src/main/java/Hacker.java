@@ -1,4 +1,5 @@
 
+
 class Insan {
 
     public Insan(int par) {

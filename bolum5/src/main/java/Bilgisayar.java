@@ -1,4 +1,5 @@
 
+
 class HesapMakinesi {
 
     void hesapla(double a, double b) {

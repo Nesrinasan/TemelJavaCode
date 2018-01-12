@@ -1,3 +1,5 @@
+
+
 public class Motor {
 
     private static int motor_gucu = 3600;

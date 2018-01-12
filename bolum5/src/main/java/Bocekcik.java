@@ -1,4 +1,5 @@
 
+
 class Bocek {
 
     static int x1 = ekranaBas("static Bocek.x1 ilk deger verildi"); //1

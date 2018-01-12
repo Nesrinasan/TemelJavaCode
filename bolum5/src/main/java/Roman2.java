@@ -1,3 +1,5 @@
+
+
 class Kitap2 {
     public int sayfaSayisiOgren() {
         System.out.println("Kitap2 - sayfaSayisiOgren() ");

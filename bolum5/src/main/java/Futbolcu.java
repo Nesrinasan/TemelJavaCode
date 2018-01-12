@@ -1,3 +1,5 @@
+
+
 class KontrolMerkezi {
 
     public static void checkUp(Sporcu s) {

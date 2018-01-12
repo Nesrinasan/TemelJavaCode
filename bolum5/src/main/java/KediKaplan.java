@@ -1,3 +1,5 @@
+
+
 class Kedi {
 
     protected int ayakSayisi = 4;

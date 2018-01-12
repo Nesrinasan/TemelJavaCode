@@ -1,4 +1,5 @@
 
+
 class A {
 
     public final void ekranaYaz() {

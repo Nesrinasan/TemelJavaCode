@@ -1,3 +1,5 @@
+
+
 public class YeniBirSinif extends Object {
 
     public static void main(String[] args) {

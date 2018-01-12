@@ -1,3 +1,5 @@
+
+
 class Kitap {
 
     public int sayfaSayisiOgren() {
