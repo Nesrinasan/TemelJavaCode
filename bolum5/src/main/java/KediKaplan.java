@@ -6,10 +6,10 @@ class Kedi {
 
     public static void main(String args[]) {
         Kedi kd = new Kedi();
-        kd.yakalaAv();
+        kd.avYakala();
     }
 
-    public void yakalaAv() {
+    public void avYakala() {
         System.out.println("Kedi sinifi Av yakaladi");
     }
 
@@ -19,7 +19,7 @@ class Kaplan extends Kedi {
 
     public static void main(String args[]) {
         Kaplan kp = new Kaplan();
-        kp.yakalaAv();
+        kp.avYakala();
         System.out.println("Ayak Sayisi = " + kp.ayakSayisi);
     }
 }
