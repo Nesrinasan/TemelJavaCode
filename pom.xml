@@ -9,5 +9,8 @@
         <module>bolum1</module>
         <module>bolum2</module>
         <module>bolum3</module>
+        <module>bolum4</module>
+        <module>bolum5</module>
+        <module>bolum6</module>
     </modules>
 </project>
