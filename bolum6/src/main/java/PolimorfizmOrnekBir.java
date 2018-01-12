@@ -1,5 +1,5 @@
 
-class Asker
+class Asker {
 
         public void selamVer() {
             System.out.println("Asker Selam verdi");

@@ -1,3 +1,4 @@
+package com.kodcu.isyerinon;
 
 class Calisan {
     public String pozisyon = "Calisan";

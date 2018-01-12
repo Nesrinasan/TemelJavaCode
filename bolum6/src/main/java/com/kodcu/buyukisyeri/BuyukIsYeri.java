@@ -1,3 +1,4 @@
+package com.kodcu.buyukisyeri;
 
 class Calisan {
     public String pozisyon;

@@ -1,6 +1,6 @@
+package com.kodcu.televizyon2;
 
 class Xmodel {
-
     public void sesAc() {
         System.out.println("X model televizyon sesAc()");
     }
@@ -15,7 +15,6 @@ class Xmodel {
 }
 
 class Ymodel extends Xmodel {
-
     public void sesAc() {  // iptal etme (override)
         System.out.println("Y model televizyon sesAc()");
     }
@@ -28,23 +27,30 @@ class Ymodel extends Xmodel {
         System.out.println("Y model televizyon kanalDegistir() ");
     }
 
-    public void teleText() { // kat�lan yeni bir �zellik
+    public void teleText() {
         System.out.println("Y model televizyon teleText()");
     }
 
 }
 
-public class Televizyon {
+public class Televizyon2 {
     public static void main(String args[]) {
 
-        // yukari dogru cevirim ( upcasting )
-        Xmodel x_model_kumanda = new Ymodel();
-        x_model_kumanda.sesAc();
-        x_model_kumanda.sesKapa();
-        x_model_kumanda.kanalDegistir();
+        Object[] ob = new Object[2];
+        ob[0] = new Xmodel(); // yukari dogru cevirim (upcasting)
+        ob[1] = new Ymodel(); // yukari dogru cevirim (upcasting)
 
-        //!! hata !! , bu kumandanin boyle bir dugmesi yok :)
-        // x_model_kumanda.teleText() ;
+        for (int i = 0; i < ob.length; i++) {
+
+            // asagiya dogru cevirim (Downcasting)
+            Xmodel x_model_kumanda = (Xmodel) ob[i];
+            x_model_kumanda.sesAc();
+            x_model_kumanda.sesKapa();
+            x_model_kumanda.kanalDegistir();
+            // x_model_kumanda.teleText(); // bu kumanda da boyle bir dugme yok
+            System.out.println("-----------------------------------------------");
+        }
+
     }
 }
 

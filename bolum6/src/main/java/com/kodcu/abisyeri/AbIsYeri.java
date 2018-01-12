@@ -1,4 +1,4 @@
-package main.java;
+package com.kodcu.abisyeri;
 
 abstract class Calisan {
 
