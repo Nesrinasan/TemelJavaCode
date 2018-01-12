@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bolum1/bolum1.iml" filepath="$PROJECT_DIR$/bolum1/bolum1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bolum2/bolum2.iml" filepath="$PROJECT_DIR$/bolum2/bolum2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bolum3/bolum3.iml" filepath="$PROJECT_DIR$/bolum3/bolum3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bolum4/bolum4.iml" filepath="$PROJECT_DIR$/bolum4/bolum4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bolum5/bolum5.iml" filepath="$PROJECT_DIR$/bolum5/bolum5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bolum6/bolum6.iml" filepath="$PROJECT_DIR$/bolum6/bolum6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi.iml" filepath="$PROJECT_DIR$/multi.iml" />
+    </modules>
+  </component>
+</project>
