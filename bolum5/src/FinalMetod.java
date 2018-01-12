@@ -8,7 +8,9 @@ class A {
 
 class B extends A {
 
+    /*
     public void ekranaYaz() {
         System.out.println("B.ekranaYaz()");
     }
+    */
 }

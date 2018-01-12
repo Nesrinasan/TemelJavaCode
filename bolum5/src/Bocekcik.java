@@ -18,9 +18,9 @@ class Bocek {
 
 public class Bocekcik extends Bocek {
 
-    istatic
+
     int x2 = ekranaBas("static Bocekcik.x2 ilk deger verildi"); //2
-    nt k = ekranaBas("Bocekcik.k ilk deger verildi"); //5
+    static int k = ekranaBas("Bocekcik.k ilk deger verildi"); //5
 
     Bocekcik() {
         ekranaBas("k = " + k); //6

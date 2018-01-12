@@ -7,7 +7,9 @@ class Telefon {
 
 class CepTelefonu extends Telefon {
 
+    /*
     private void aramaYap() {
         System.out.println("CepTelefon.aramaYap()");
     }
+    */
 }

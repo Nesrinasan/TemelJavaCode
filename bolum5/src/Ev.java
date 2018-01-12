@@ -7,7 +7,7 @@ final class Televizyon {
     }
 }
 
-
+/*
 class SuperTelevizyon extends Televizyon {
 
 }
@@ -27,3 +27,4 @@ class Ev {
 
 }
 
+*/
