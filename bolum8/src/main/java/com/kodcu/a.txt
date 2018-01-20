@@ -1,0 +1,2 @@
+oku() metodu cagrildi
+cokOku() metodu cagrildi
