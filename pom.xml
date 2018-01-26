@@ -12,5 +12,7 @@
         <module>bolum4</module>
         <module>bolum5</module>
         <module>bolum6</module>
+        <module>bolum7</module>
+        <module>lambda</module>
     </modules>
 </project>

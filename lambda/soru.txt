@@ -1,0 +1,3 @@
+Bir elektrik dağıtım firmasında müşteriler semt ve ödedikleri elektrik ücretlerine göre filtrelemek isteniyor.
+Ör : 1000 TL nin altında ödeme yapan müşteriler
+Ör : Erenköy 'de oturan müşteriler.
