@@ -3,6 +3,10 @@ package com.kodcu.streams;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.kodcu.streams.Yemek.Type.BALIK;
+import static com.kodcu.streams.Yemek.Type.DIGER;
+import static com.kodcu.streams.Yemek.Type.ET;
+
 public class Yemek {
 
     private final String ismi;
@@ -33,7 +37,7 @@ public class Yemek {
         return tipi;
     }
 
-    public enum Type { MEAT, FISH, OTHER }
+    public enum Type {ET, BALIK, DIGER}
 
     @Override
     public String toString() {
@@ -41,13 +45,13 @@ public class Yemek {
     }
 
     public static final List<Yemek> menu =
-            Arrays.asList( new Yemek("rosto", false, 800, Yemek.Type.MEAT),
-                           new Yemek("biftek", false, 700, Yemek.Type.MEAT),
-                           new Yemek("tavuk", false, 400, Yemek.Type.MEAT),
-                           new Yemek("kizarmis patates", true, 530, Yemek.Type.OTHER),
-                           new Yemek("pilav", true, 350, Yemek.Type.OTHER),
-                           new Yemek("meyve", true, 120, Yemek.Type.OTHER),
-                           new Yemek("pizza", true, 550, Yemek.Type.OTHER),
-                           new Yemek("kalamar", false, 400, Yemek.Type.FISH),
-                           new Yemek("somon", false, 450, Yemek.Type.FISH));
+            Arrays.asList( new Yemek("rosto", false, 800, ET),
+                           new Yemek("biftek", false, 700, ET),
+                           new Yemek("tavuk", false, 400, ET),
+                           new Yemek("kizarmis patates", true, 530, DIGER),
+                           new Yemek("pilav", true, 350, DIGER),
+                           new Yemek("meyve", true, 120, DIGER),
+                           new Yemek("pizza", true, 550, DIGER),
+                           new Yemek("kalamar", false, 400, BALIK),
+                           new Yemek("somon", false, 450, BALIK));
 }
