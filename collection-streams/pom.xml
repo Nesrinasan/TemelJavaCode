@@ -7,6 +7,7 @@
     <groupId>com.kodcu</groupId>
     <artifactId>collection-streams</artifactId>
     <version>1.0</version>
+
     <packaging>jar</packaging>
 
 
