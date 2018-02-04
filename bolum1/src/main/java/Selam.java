@@ -1,4 +1,3 @@
-package com.kodcu;
 
 public class Selam {
 	public static void main() {

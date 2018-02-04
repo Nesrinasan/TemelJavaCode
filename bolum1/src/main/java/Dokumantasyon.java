@@ -1,4 +1,4 @@
-package com.kodcu;
+
 
 /**
  * @author rahman usta
