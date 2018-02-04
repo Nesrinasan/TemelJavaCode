@@ -7,7 +7,7 @@
     <groupId>com.kodcu</groupId>
     <artifactId>bolum6</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>bolum6</name>
+    <ismi>bolum6</ismi>
 
     <packaging>jar</packaging>
 </project>
