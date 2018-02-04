@@ -1,3 +1,5 @@
+package com.kodcu;
+
 /**
  * @author rahman usta
  * @see java.lang.String

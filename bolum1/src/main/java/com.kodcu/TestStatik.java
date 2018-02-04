@@ -1,3 +1,5 @@
+package com.kodcu;
+
 public class TestStatik {
 	
 	public static void uyariYap() {

@@ -1,4 +1,6 @@
-public class ParametreUygulamasi 
+package com.kodcu;
+
+public class ParametreUygulamasi
 {
 	public static void main(String[] args) 
 	{

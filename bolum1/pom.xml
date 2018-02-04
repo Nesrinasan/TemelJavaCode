@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>bolum1</artifactId>
-    <name>bolum1</name>
+    <ismi>bolum1</ismi>
     <packaging>jar</packaging>
 
 

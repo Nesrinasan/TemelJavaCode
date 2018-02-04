@@ -1,3 +1,5 @@
+package com.kodcu;
+
 /** Ilk Java Kodumuzun Dokumantasyonu
  * Ekrana Selamlar diyen bir uygulama  
  * @see #main
