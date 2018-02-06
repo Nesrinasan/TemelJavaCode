@@ -3,7 +3,7 @@ package com.kodcu;
 public class DegiskenGosterim {
 
     private int x; //nesneye ait global alan
-    int y; // sinifa ait global alan
+    static int y; // sinifa ait global alan
 
     public void metod() {
         int i; //yerel degisken
