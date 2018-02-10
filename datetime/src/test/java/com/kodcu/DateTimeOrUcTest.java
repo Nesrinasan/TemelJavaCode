@@ -18,10 +18,10 @@ import static com.kodcu.DateTimeOrUc.getDatesBetweenUsingJava8;
 import static org.junit.Assert.assertEquals;
 
 
+/**
+ * Fark alma işlemlerinin testi - Java 7 ve Java 8  de
+ */
 public class DateTimeOrUcTest {
-
-
-
 
     @Test
     public void testZamanZaman() throws Exception{

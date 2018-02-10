@@ -10,6 +10,10 @@ import java.util.TimeZone;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Joda ve Date4j kütüphanelerini test ediliyor
+ * Fark bulma
+ */
 public class ExternalLibraryTest {
 
     @Test

@@ -18,6 +18,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+
+/**
+ * Java 7 ve Java 8 de fark bulma karsilastimalari
+ * Java 9 a ornegi de  mevcut
+ */
 public class DateTimeOrUc {
 
     public static List<Date> getDatesBetweenUsingJava7(Date startDate, Date endDate) {

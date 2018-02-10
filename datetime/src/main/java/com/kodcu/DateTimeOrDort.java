@@ -3,11 +3,11 @@ package com.kodcu;
 
 import java.util.Date;
 
+/**
+ * İki tarih arasindaki ay, gun, saat farklarina bulan
+ * prakmatik bir ornek
+ */
 public class DateTimeOrDort {
-
-
-
-
 
     //1 minute = 60 seconds
     //1 hour = 60 x 60 = 3600

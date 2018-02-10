@@ -17,10 +17,11 @@ import static com.kodcu.DateTimeOrUc.getDatesBetweenUsingJava8;
 import static org.junit.Assert.assertEquals;
 
 
+/**
+ *  İki tarih arasındaki farkı bulma  - net fark
+ *  Java 7 de , Java 8 de Duration
+ */
 public class DateTimeOrDortTest {
-
-
-
 
     @Test
     public void testDiffence() throws Exception{
@@ -46,23 +47,31 @@ public class DateTimeOrDortTest {
 
     @Test
     public void givenTwoDatesInJava8_whenDifferentiating_thenWeGetSix() {
+
+        // given
         LocalDateTime now = LocalDateTime.now();
         LocalDateTime sixDaysBehind = now.minusDays(6);
 
+        // when
         Duration duration = Duration.between(now, sixDaysBehind);
         long diff = Math.abs(duration.toDays());
 
+        // then
         assertEquals(diff, 6);
     }
 
     @Test
     public void givenTwoDateTimesInJava8_whenDifferentiating_thenWeGetSix() {
+
+        // given
         LocalDateTime now = LocalDateTime.now();
         LocalDateTime sixMinutesBehind = now.minusMinutes(6);
 
+        // when
         Duration duration = Duration.between(now, sixMinutesBehind);
         long diff = Math.abs(duration.toMinutes());
 
+        // then
         assertEquals(diff, 6);
     }
 

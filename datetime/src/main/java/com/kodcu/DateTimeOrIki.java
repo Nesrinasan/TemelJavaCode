@@ -5,6 +5,10 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
 
+
+/**
+ * eski Date > LocalDateTime nasil ceviririz.
+ */
 public class DateTimeOrIki {
 
 

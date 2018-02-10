@@ -11,6 +11,11 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Set;
 
+
+/**
+ * Java 8 'e ait LocalDate, LocalDateTime, Duration, Instant siniflari inceleniyor
+ * Ayrica Zone kavrami mevcut
+ */
 public class DateTimeExamples {
 
     private static final String DATE_FORMAT = "dd-M-yyyy hh:mm:ss a";
