@@ -1,11 +1,11 @@
 package com.kodcu.karisim2;
 
-interface Hayvan {
+interface Avlanabilir {
 	public void avlan() ;
 
 }
 
-abstract class Kedi implements Hayvan {
+abstract class Kedi implements Avlanabilir {
 
 	public abstract  void takipEt() ;
 }
