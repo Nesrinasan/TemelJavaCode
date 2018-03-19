@@ -1,7 +1,7 @@
 public class ErenkoyKurali implements Kural{
     @Override
     public boolean uygulama(Musteri musteri) {
-        if ("erenkoy".equals(musteri.getSemt())) {
+        if ("erenkoy".equalsIgnoreCase(musteri.getSemt())) {
             return true ;
         }
 
