@@ -14,10 +14,10 @@ public class MusteriTest {
     static List<Musteri> musteriList  = Arrays.asList(
 
             new Musteri(2000, "Erenkoy", Arrays.asList(new Fatura(1000, "2018-01-30"), new Fatura(1000, "2018-02-30"))),
-            new Musteri(990, "Kazasker",Arrays.asList(new Fatura(1000, "2018-01-30"), new Fatura(1000, "2018-02-30"))),
-            new Musteri(1200, "Kadikoy",Arrays.asList(new Fatura(1000, "2018-01-30"), new Fatura(1000, "2018-02-30"))),
-            new Musteri(200, "Maslak",Arrays.asList(new Fatura(1000, "2018-01-30"), new Fatura(1000, "2018-02-30"))) ,
-            new Musteri(1750, "Atasehir", Arrays.asList(new Fatura(1000, "2018-01-30"), new Fatura(1000, "2018-02-30")))
+            new Musteri(990, "Kazasker",Arrays.asList(new Fatura(590, "2018-01-30"), new Fatura(400, "2018-02-30"))),
+            new Musteri(1200, "Kadikoy",Arrays.asList(new Fatura(600, "2018-01-30"), new Fatura(600, "2018-02-30"))),
+            new Musteri(200, "Maslak",Arrays.asList(new Fatura(150, "2018-01-30"), new Fatura(50, "2018-02-30"))) ,
+            new Musteri(1750, "Atasehir", Arrays.asList(new Fatura(1000, "2018-01-30"), new Fatura(750, "2018-02-30")))
 
             );
 
