@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class MusteriUtil {
@@ -46,6 +47,19 @@ public class MusteriUtil {
 
         for (Musteri musteri : musteriList)  {
             if (kural.test(musteri) ) {
+                sonuc.add(musteri);
+            }
+        }
+        return sonuc;
+    }
+
+    public static List<Musteri> filterFunction(Function<Musteri, Boolean> kuralFunction, List<Musteri> musteriList) {
+
+        List<Musteri> sonuc = new ArrayList<>();
+
+
+        for (Musteri musteri : musteriList)  {
+            if (kuralFunction.apply(musteri) ) {
                 sonuc.add(musteri);
             }
         }

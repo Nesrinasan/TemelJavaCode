@@ -2,6 +2,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Function;
@@ -11,13 +13,13 @@ public class MusteriTest {
 
     static List<Musteri> musteriList  = Arrays.asList(
 
-            new Musteri(2000, "Erenkoy"),
-            new Musteri(990, "Kazasker"),
-            new Musteri(1200, "Kadikoy"),
-            new Musteri(200, "Maslak"),
-            new Musteri(1750, "Atasehir")
+            new Musteri(2000, "Erenkoy", Arrays.asList(new Fatura(1000, "2018-01-30"), new Fatura(1000, "2018-02-30"))),
+            new Musteri(990, "Kazasker",Arrays.asList(new Fatura(1000, "2018-01-30"), new Fatura(1000, "2018-02-30"))),
+            new Musteri(1200, "Kadikoy",Arrays.asList(new Fatura(1000, "2018-01-30"), new Fatura(1000, "2018-02-30"))),
+            new Musteri(200, "Maslak",Arrays.asList(new Fatura(1000, "2018-01-30"), new Fatura(1000, "2018-02-30"))) ,
+            new Musteri(1750, "Atasehir", Arrays.asList(new Fatura(1000, "2018-01-30"), new Fatura(1000, "2018-02-30")))
 
-    );
+            );
 
     @Test
     public void testErenkoy() {
@@ -31,6 +33,8 @@ public class MusteriTest {
 
         // then
         Assert.assertEquals(1, sonuc.size());
+
+
 
     }
 
@@ -171,6 +175,27 @@ public class MusteriTest {
 
         // then
         Assert.assertEquals(3, sonuc.size());
+
+
+    }
+
+    @Test
+    public void testLambdaFunction() {
+
+        // given
+        // musterli list
+
+
+        // when
+
+        Predicate<Musteri> erenkoyKurali  = musteri -> "erenkoy".equalsIgnoreCase(musteri.getSemt());
+        Predicate<Musteri> binTLAzKurali  = musteri ->  musteri.getBorc() < 1000 ;
+        Predicate<Musteri> yeniKural = erenkoyKurali.or(binTLAzKurali);
+
+        List<Musteri> sonuc = MusteriUtil.filterFunction( musteri -> "erenkoy".equalsIgnoreCase(musteri.getSemt()), musteriList);
+
+        // then
+        Assert.assertEquals(1, sonuc.size());
 
 
     }
