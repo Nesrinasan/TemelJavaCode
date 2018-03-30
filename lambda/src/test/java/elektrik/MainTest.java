@@ -98,18 +98,28 @@ public class MainTest {
 
         // when
 
-        // when
-
         List<Musteri> sinirinAltindaKalanMusteriler  =
                 MusteriUtil.filter(new Kural() {
                     @Override
                     public boolean uygula(Musteri musteri) {
-                        if (musteri.getBorc()> 500 ) {
-                            return true;
-                        }
-                        return false ;
+                       return  musteri.getBorc()> 500 ;
                     }
                 }, musteriList);
+
+        // then
+
+        Assert.assertEquals(sinirinAltindaKalanMusteriler.size(), 5 );
+    }
+
+    @Test
+    public void lambdaTest() {
+
+        // given  - musteri list
+
+        // when
+
+        List<Musteri> sinirinAltindaKalanMusteriler  =
+                MusteriUtil.filter( musteri -> musteri.getBorc()> 500, musteriList);
 
         // then
 
