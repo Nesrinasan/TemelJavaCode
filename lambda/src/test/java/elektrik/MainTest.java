@@ -5,7 +5,14 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.function.BiFunction;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
+import static java.util.Comparator.comparing;
 
 public class MainTest {
 
@@ -101,7 +108,7 @@ public class MainTest {
         List<Musteri> sinirinAltindaKalanMusteriler  =
                 MusteriUtil.filter(new Kural() {
                     @Override
-                    public boolean uygula(Musteri musteri) {
+                    public boolean uygula(Musteri musteri, Musteri musteri2) {
                        return  musteri.getBorc()> 500 ;
                     }
                 }, musteriList);
@@ -119,10 +126,85 @@ public class MainTest {
         // when
 
         List<Musteri> sinirinAltindaKalanMusteriler  =
-                MusteriUtil.filter( musteri -> musteri.getBorc()> 500, musteriList);
+                MusteriUtil.filter( (musteri, musteri2) ->
+                        musteri.getBorc()> 500 , musteriList);
 
         // then
 
         Assert.assertEquals(sinirinAltindaKalanMusteriler.size(), 5 );
+    }
+
+
+    @Test
+    public void lambdaTemel() {
+
+        Function<Integer, Integer> f = (x) -> x + 1 ;
+        Function<Integer, Integer> g = (x) -> x * 2 ;
+
+        int result = f.apply(1) ;
+        Assert.assertEquals(2, result);
+
+        int resultOfG = g.apply(2);
+        Assert.assertEquals(4, resultOfG);
+
+        int resultAng = f.andThen(g).apply(1) ;
+        Assert.assertEquals(4, resultAng);
+
+        int resultCompose =  f.compose(g).apply(1) ;
+        Assert.assertEquals(3, resultCompose);
+
+        BiFunction<Integer, Integer, Integer> fx = (x, y) -> x + y + 1 ;
+        fx.apply(1,3);
+
+    }
+
+    @Test
+    public void lambdaVeStream() {
+
+       List<Musteri> sonuc =
+               musteriList.stream().filter( musteri -> musteri.getBorc()> 1000).
+                       collect(Collectors.toList());
+
+        Assert.assertEquals(3, sonuc.size());
+
+    }
+
+    @Test
+    public void predicateTest() {
+
+        Predicate<Musteri> predicate1 = musteri -> musteri.getBorc()> 1000;
+        Predicate<Musteri> predicate2 = musteri -> musteri.getSemt().
+                equalsIgnoreCase("Besiktas");
+
+        Predicate<Musteri> predicate3  = predicate1.and(predicate2);
+
+        List<Musteri> sonuc = MusteriUtil.filterPredicate(predicate3, musteriList);
+
+        Assert.assertEquals(1, sonuc.size());
+
+    }
+
+    @Test
+    public void functionTest() {
+
+
+        List<Musteri> sonuc =
+                MusteriUtil.filterFunction(musteri -> musteri.getBorc()> 1000,
+                        musteriList);
+
+        Assert.assertEquals(3, sonuc.size());
+
+    }
+
+    @Test
+    public void siralaTest() {
+
+
+
+       // musteriList.sort(Comparator.comparing(musteri -> musteri.getBorc()));
+        musteriList.sort(comparing(Musteri::getBorc).reversed());
+
+        Assert.assertEquals("Atasehir", musteriList.get(0).getSemt());
+
     }
 }
