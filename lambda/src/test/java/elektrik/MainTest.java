@@ -7,8 +7,10 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Comparator.comparing;
@@ -17,13 +19,41 @@ public class MainTest {
 
 
     private static List<Musteri> musteriList = Arrays.asList(
-            new Musteri(1000, "Erenkoy"),
-            new Musteri(750, "Kadikoy"),
-            new Musteri(100, "Maslak"),
-            new Musteri(2000, "Besiktas"),
-            new Musteri(150, "Merter"),
-            new Musteri(3500, "Atasehir"),
-            new Musteri(1291, "Mecisiyekoy")
+            new Musteri(1000, "Erenkoy", Arrays.asList(
+                    new Fatura("2018-02-02", 500),
+                    new Fatura("2018-02-03", 500)
+
+            )),
+            new Musteri(750, "Kadikoy" , Arrays.asList(
+                    new Fatura("2018-02-02", 250),
+                    new Fatura("2018-02-03", 500)
+
+            )),
+            new Musteri(100, "Maslak" , Arrays.asList(
+                    new Fatura("2018-02-02", 90),
+                    new Fatura("2018-02-03", 10)
+
+            )),
+            new Musteri(2000, "Besiktas", Arrays.asList(
+                    new Fatura("2018-02-02", 1900),
+                    new Fatura("2018-02-03", 100)
+
+            )),
+            new Musteri(150, "Merter", Arrays.asList(
+                    new Fatura("2018-02-02", 75),
+                    new Fatura("2018-02-03", 75)
+
+            )),
+            new Musteri(3500, "Atasehir", Arrays.asList(
+                    new Fatura("2018-02-02", 2500),
+                    new Fatura("2018-02-03", 1000)
+
+            )),
+            new Musteri(1291, "Mecisiyekoy", Arrays.asList(
+                    new Fatura("2018-02-02", 1200),
+                    new Fatura("2018-02-03", 91)
+
+            ))
     );
 
 
@@ -209,7 +239,9 @@ public class MainTest {
         Consumer<Musteri> musteriConsumer = (musteri) -> System.out.println(" *** " +
                 musteri.getBorc());
 
+        /*
         musteriConsumer.accept(new Musteri(1, "Bebek"));
+
 
         Supplier<List<Musteri>> musteriSupplier = ()  -> {
            return Arrays.asList(
@@ -226,6 +258,16 @@ public class MainTest {
 
         Stream<List<Musteri>> listOfMusteri = Stream.generate(musteriSupplier);
 
+        // TODO musteri supplier içerisinde borcu 2 tl olani bulun
+
+        Optional<Musteri> musteriOptional =
+                IntStream.range(0, listOfMusteri.findFirst().get().size()).
+                        mapToObj(i -> listOfMusteri.findFirst().get().get(i)).
+                        filter(musteri2 -> musteri2.getBorc() == 6).findFirst() ;
+        musteriOptional.ifPresent(System.out::print);
+
+        //Assert.assertArrayEquals(sonuc, "Kazasker");
+   */
 
 
 
