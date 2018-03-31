@@ -275,4 +275,23 @@ public class MainTest {
 
 
     }
+
+    @Test
+    public void faturaTest() {
+
+       List<Fatura> faturalar =   musteriList.stream()
+                .map(musteri -> musteri.getFaturalar()).
+                flatMap(faturas -> faturas.stream()).
+                filter(fatura -> fatura.getTutar()> 100).
+                collect(Collectors.toList());
+
+        faturalar.forEach(System.out::println);
+        Assert.assertEquals(8, faturalar.size());
+
+
+        Stream<List<Fatura>> musteriler =   musteriList.stream().
+                map(musteri -> musteri.getFaturalar());
+
+
+    }
 }
