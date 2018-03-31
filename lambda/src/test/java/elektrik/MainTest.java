@@ -7,10 +7,9 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.BiFunction;
-import java.util.function.Function;
-import java.util.function.Predicate;
+import java.util.function.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.util.Comparator.comparing;
 
@@ -201,10 +200,37 @@ public class MainTest {
 
 
 
-       // musteriList.sort(Comparator.comparing(musteri -> musteri.getBorc()));
+        //musteriList.sort(comparing(musteri -> musteri.getBorc()));
         musteriList.sort(comparing(Musteri::getBorc).reversed());
 
         Assert.assertEquals("Atasehir", musteriList.get(0).getSemt());
+
+
+        Consumer<Musteri> musteriConsumer = (musteri) -> System.out.println(" *** " +
+                musteri.getBorc());
+
+        musteriConsumer.accept(new Musteri(1, "Bebek"));
+
+        Supplier<List<Musteri>> musteriSupplier = ()  -> {
+           return Arrays.asList(
+                   new Musteri(1 , "Bebek"),
+                   new Musteri(2 , "Kazasker"),
+                   new Musteri(3 , "Sariyer"));
+
+        };
+
+
+        List<Musteri> musteriList = musteriSupplier.get();
+
+        musteriList.forEach(musteriConsumer);
+
+        Stream<List<Musteri>> listOfMusteri = Stream.generate(musteriSupplier);
+
+
+
+
+
+
 
     }
 }
