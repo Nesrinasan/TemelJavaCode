@@ -4,7 +4,7 @@
     <artifactId>multi</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <ismi>multi</ismi>
+
     <modules>
         <module>bolum1</module>
         <module>bolum2</module>
@@ -16,5 +16,6 @@
         <module>bolum8</module>
         <module>lambda</module>
         <module>collection-streams</module>
+        <module>datetime</module>
     </modules>
 </project>
